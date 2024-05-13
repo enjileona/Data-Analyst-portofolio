@@ -1,4 +1,4 @@
-# Repository: enjileona
+# Data Analyst Portofolio
 
 ## Description:
 This repository contains files related to a project involving coffee sales data and British Airways reviews. 
