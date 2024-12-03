@@ -91,7 +91,7 @@ WHERE ranking <= 3
 AND years IS NOT NULL
 ORDER BY years ASC, total_laid_off DESC;
 
--- Menampilkan total PHK tiap bulan
+-- 14. Menampilkan total PHK tiap bulan
 SELECT SUBSTRING(date,1,7) as dates, SUM(total_laid_off) AS total_laid_off
 FROM world_layoffs.layoffs_staging2
 GROUP BY dates
