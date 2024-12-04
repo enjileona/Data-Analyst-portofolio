@@ -4,7 +4,7 @@ select* from world_layoffs.layoffs;
 
 -- 1. Menghilangkan duplikasi
 -- 2. menyelaraskan format data
--- 3. Menghapus kolom
+-- 3. Mengupdate kolom
 
 -- 1. Menghilangkan duplikasi
 #Membuat tabel baru
@@ -114,7 +114,7 @@ set `date` = str_to_date(`date`, '%m/%d/%Y');
 alter table layoffs_staging2
 modify column `date` date;
 
--- 3. Menghapus kolom
+-- 3. Mengupdate kolom
 
 select *
 from layoffs_staging2
